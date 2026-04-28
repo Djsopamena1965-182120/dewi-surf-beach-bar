@@ -1,0 +1,140 @@
+/* Banner */
+header {
+  background: url("images/beach-fotos.png") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  height: 700px;             /* vaste hoogte banner */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+#bannerBtn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff9800;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Navigatie */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 10px 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.nav-lang select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Secties */
+section {
+  padding: 40px 20px;
+}
+
+/* Afbeeldingen: zelfde formaat en gecentreerd */
+section img {
+  display: block;
+  width: 600px;             /* vaste breedte voor alle foto's */
+  height: 400px;            /* vaste hoogte voor consistentie */
+  object-fit: cover;        /* snijdt netjes bij, behoud verhouding */
+  margin: 20px auto;        /* centreren */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Prijzen sectie */
+.prices {
+  text-align: center;
+}
+
+.prices table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 60%;
+  background: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.prices th, .prices td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.prices th {
+  background: #333;
+  color: #fff;
+}
+
+/* Menu sectie */
+.menu {
+  text-align: center;
+}
+
+.menu h2,
+.menu p,
+.menu .btn {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Events sectie */
+.events {
+  text-align: center;
+}
+
+.events h2,
+.events p {
+  margin: 10px auto;
+}
+
+/* Gallery sectie */
+.gallery {
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 20px;
+}
+
+/* Contact sectie */
+#contact {
+  text-align: center;
+}
+
+#contact h2,
+#contact p {
+  margin: 10px auto;
+}
