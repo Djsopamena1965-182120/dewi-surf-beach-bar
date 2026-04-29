@@ -7,7 +7,7 @@ function updateCountdown() {
   const t = translations[lang];
 
   if (distance < 0) {
-    document.getElementById("countdownTimer").innerHTML = "🎉 " + t.beachPartyTitle + " started!";
+    document.getElementById("countdownTimer").innerHTML = "🎉 " + t.beachPartyTitle + " - " + t.countdownStarted;
     return;
   }
 
@@ -29,4 +29,6 @@ function changeLanguage(lang) {
     const el = document.getElementById(key);
     if (el) el.innerHTML = t[key];
   }
+  // ✅ Countdown direct updaten bij taalwissel
+  updateCountdown();
 }
