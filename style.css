@@ -3,7 +3,7 @@ header {
   background: url("images/beach-fotos.png") no-repeat center center/cover;
   color: #fff;
   text-align: center;
-  min-height: 110vh;
+  min-height: var(--banner-height, 60vh); /* flexibel met variabele */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,11 +24,15 @@ header p {
 /* Navigatie */
 nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;     /* alles onder elkaar */
+  justify-content: center;    /* horizontaal centreren */
+  align-items: center;        /* verticaal centreren */
   background: #333;
   padding: 10px 20px;
-  flex-wrap: wrap;
+}
+
+.nav-links {
+  text-align: center;
 }
 
 .nav-links a {
@@ -37,17 +41,31 @@ nav {
   text-decoration: none;
 }
 
+/* Taalkeuze dropdown */
+.nav-lang {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;   /* dropdown onder de links */
+}
+
+.nav-lang select {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
 /* Secties */
 section {
   padding: 40px 20px;
   text-align: center;
 }
 
-/* Afbeeldingen: uniforme maat, 50% groter */
+/* Afbeeldingen: uniforme maat */
 section img {
-  width: 700px;       /* 240px + 50% = 360px */
-  height: 500px;      /* vaste hoogte voor uniformiteit */
-  object-fit: cover;  /* snijdt netjes bij, behoud verhouding */
+  width: 360px;       /* vaste breedte */
+  height: 240px;      /* vaste hoogte */
+  object-fit: cover;  /* snijdt netjes bij */
   display: block;
   margin: 20px auto;
   border-radius: 8px;
@@ -99,84 +117,6 @@ section img {
   100% { text-shadow: 0 0 5px #ff9800, 0 0 10px #f44336; }
 }
 
-/* Knoppen styling */
-#promoBtn, #countdownBtn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 24px;
-  background: #fff;
-  color: #f44336;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s, color 0.3s, transform 0.3s;
-}
-
-#promoBtn:hover, #countdownBtn:hover {
-  background: #f44336;
-  color: #fff;
-  transform: scale(1.05);
-}
-
-#whatsappBtn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 24px;
-  background: #25D366;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s, transform 0.3s;
-}
-
-#whatsappBtn:hover {
-  background: #128C7E;
-  transform: scale(1.05);
-}
-
-#groupBtn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 24px;
-  background: #128C7E;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s, transform 0.3s;
-}
-
-#groupBtn:hover {
-  background: #075E54;
-  transform: scale(1.05);
-}
-
-/* QR-code styling */
-#groupQR {
-  text-align: center;
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 20px auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-#groupQR img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  margin: 15px auto;
-  display: block;
-  animation: glowQR 3s infinite;
-}
-
-@keyframes glowQR {
-  0% { box-shadow: 0 0 5px #25D366; }
-  50% { box-shadow: 0 0 20px #25D366; }
-  100% { box-shadow: 0 0 5px #25D366; }
-}
-
 /* Footer */
 footer {
   background: #333;
@@ -200,12 +140,9 @@ footer a:hover {
   header p { font-size: 1rem; }
   #bannerBtn { padding: 8px 16px; font-size: 0.9rem; }
 
-  nav { flex-direction: column; }
   .nav-links a { margin: 5px 0; }
 
   .prices table { font-size: 0.9rem; }
 
-  section img { width: 270px; height: 180px; } /* uniforme maat op mobiel */
-  #whatsappBtn, #groupBtn { width: 100%; margin-top: 10px; }
-  #groupQR img { width: 140px; height: 140px; }
+  section img { width: 270px; height: 180px; }
 }
