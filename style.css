@@ -57,7 +57,7 @@ section img {
   display: block;
 }
 
-/* ✅ Countdown styling aangepast naar countdownTimer */
+/* ✅ Countdown styling */
 #countdownTimer {
   background: #333;
   color: #fff;
@@ -67,20 +67,15 @@ section img {
   max-width: 400px;
 }
 
-footer {
-  background: #333;
-  color: #fff;
-  padding: 20px;
-}
-/* Surf Prijzen sectie */
+/* ✅ Surf Prijzen sectie */
 .prices {
-  text-align: center;       /* centreert de titel en inhoud */
+  text-align: center;
 }
 
 .prices table {
-  margin: 0 auto;           /* centreert de tabel zelf */
+  margin: 0 auto;
   border-collapse: collapse;
-  width: 60%;               /* niet te breed */
+  width: 60%;
   background: #f9f9f9;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -88,10 +83,21 @@ footer {
 .prices th, .prices td {
   border: 1px solid #ddd;
   padding: 12px;
-  text-align: center;       /* centreert tekst in cellen */
+  text-align: center;
 }
 
 .prices th {
   background: #333;
   color: #fff;
+}
+
+/* Optioneel: hover-effect voor modernere look */
+.prices tr:hover {
+  background-color: #f1f1f1;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
 }
