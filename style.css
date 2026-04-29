@@ -1,38 +1,26 @@
-/* Banner */
+:root {
+  --banner-height: 70vh;
+}
+
 header {
   background: url("images/beach-fotos.png") no-repeat center center/cover;
   color: #fff;
   text-align: center;
-  min-height: var(--banner-height, 60vh); /* flexibel met variabele */
+  min-height: var(--banner-height);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   padding: 20px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-/* Navigatie */
 nav {
   display: flex;
-  flex-direction: column;     /* alles onder elkaar */
-  justify-content: center;    /* horizontaal centreren */
-  align-items: center;        /* verticaal centreren */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #333;
   padding: 10px 20px;
-}
-
-.nav-links {
-  text-align: center;
 }
 
 .nav-links a {
@@ -41,108 +29,37 @@ nav {
   text-decoration: none;
 }
 
-/* Taalkeuze dropdown */
 .nav-lang {
   margin-top: 10px;
   text-align: center;
-  width: 100%;   /* dropdown onder de links */
+  width: 100%;
 }
 
-.nav-lang select {
-  padding: 6px 12px;
-  border-radius: 4px;
-  border: none;
-  font-size: 1rem;
-}
-
-/* Secties */
 section {
   padding: 40px 20px;
   text-align: center;
 }
 
-/* Afbeeldingen: uniforme maat */
 section img {
-  width: 360px;       /* vaste breedte */
-  height: 240px;      /* vaste hoogte */
-  object-fit: cover;  /* snijdt netjes bij */
+  width: 360px;
+  height: 240px;
+  object-fit: cover;
   display: block;
   margin: 20px auto;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* Prijzen sectie */
-.prices table {
-  margin: 0 auto;
-  border-collapse: collapse;
-  width: 100%;
-  background: #f9f9f9;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.prices th, .prices td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: center;
-}
-
-.prices th {
-  background: #333;
-  color: #fff;
-}
-
-/* Countdown sectie */
 #countdown {
   background: #333;
   color: #fff;
-  text-align: center;
   padding: 20px;
   border-radius: 8px;
   margin: 20px auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-#countdownTimer {
-  margin-top: 10px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  animation: pulseGlow 2s infinite;
-}
-
-@keyframes pulseGlow {
-  0% { text-shadow: 0 0 5px #ff9800, 0 0 10px #f44336; }
-  50% { text-shadow: 0 0 20px #ff9800, 0 0 30px #f44336; }
-  100% { text-shadow: 0 0 5px #ff9800, 0 0 10px #f44336; }
-}
-
-/* Footer */
 footer {
   background: #333;
   color: #fff;
   text-align: center;
   padding: 20px;
-}
-
-footer a {
-  color: #25D366;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #128C7E;
-}
-
-/* Media queries voor mobiel */
-@media (max-width: 768px) {
-  header h1 { font-size: 2rem; }
-  header p { font-size: 1rem; }
-  #bannerBtn { padding: 8px 16px; font-size: 0.9rem; }
-
-  .nav-links a { margin: 5px 0; }
-
-  .prices table { font-size: 0.9rem; }
-
-  section img { width: 270px; height: 180px; }
 }
