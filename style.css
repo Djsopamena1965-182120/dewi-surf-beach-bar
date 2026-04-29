@@ -2,11 +2,12 @@
 header {
   background: url("images/beach-fotos.png") no-repeat center center/cover;
   color: #fff;
-  text-align: center;
+  text-align: center;   /* teksten gecentreerd */
   min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;  /* horizontaal centreren */
   padding: 20px;
 }
 
@@ -39,14 +40,15 @@ nav {
 /* Secties */
 section {
   padding: 40px 20px;
+  text-align: center;   /* alle sectieteksten gecentreerd */
 }
 
 /* Afbeeldingen: compact en gecentreerd */
 section img {
-  width: 240px;       /* vaste breedte, niet schermvullend */
+  width: 240px;       /* vaste breedte */
   height: auto;
   display: block;
-  margin: 20px auto;
+  margin: 20px auto;  /* centreert horizontaal */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -58,6 +60,7 @@ section img {
   width: 100%;
   background: #f9f9f9;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;   /* tabelinhoud gecentreerd */
 }
 
 .prices th, .prices td {
@@ -159,7 +162,7 @@ section img {
 }
 
 #groupQR img {
-  width: 180px;       /* vaste maat QR-code */
+  width: 180px;
   margin: 15px auto;
   display: block;
   animation: glowQR 3s infinite;
