@@ -7,38 +7,21 @@ const translations = {
     navGallery: "Gallery",
     navPrices: "Prices",
     navContact: "Contact",
-    optEn: "English",
-    optId: "Bahasa",
-    optNl: "Dutch",
     menuTitle: "Our Menu",
-    menuDesc: "🍹 Tropical cocktails, cold Bintang beers, coconut drinks and soft drinks • 🍔 Indonesian food • 🥗 Fresh salads",
-    menuDrinkText: "Refreshing tropical cocktails",
-    menuBeerText: "Cold Bintang beers",
+    menuDesc: "🍹 Tropical cocktails, cold Bintang beers, coconut drinks and various soft drinks • 🍔 Indonesian food • 🥗 Fresh salads",
     reserveBtn: "Reserve a Table",
     eventsTitle: "Events",
     eventsDesc: "🎶 Live music every Friday<br>🏄 Surf competitions every Sunday",
     galleryTitle: "Gallery",
-    galleryBarText: "Our cozy beach bar",
-    gallerySurfText: "Surf section at Kuta Beach",
     pricesTitle: "Surf Lesson Prices",
     pricePrivate: "Private",
     priceSemi: "Semi-Private",
     priceGroup: "Group",
     contactTitle: "Contact & Location",
     contactDesc: "📍 Dewi Surf & Beach Bar<br>Jl. Pantai Kuta, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361<br>📞 0852-6109-9023",
-    footerText: "© 2026 Dewi Surf & Beach Bar | Ride the Waves, Taste the Vibes",
-    beachPartyTitle: "🌴 Beach Party – May 8, 2026",
-    beachPartyTime: "Opening at 18:00, party starts at 19:00",
-    beachPartyDetails: "🔥 Bonfire • 🎶 Live music • 🎤 Karaoke",
-    beachPartyPrice: "🎟️ Entrance: 200k per person (promo price)",
-    countdownTitle: "Countdown to Beach Party",
-    countdownBtn: "Reserve via WhatsApp",
-    countdownDays: "days",
-    countdownHours: "hours",
-    countdownMinutes: "minutes",
-    countdownSeconds: "seconds",
-    countdownStarted: "has started!"
+    footerText: "© 2026 Dewi Surf & Beach Bar | Ride the Waves, Taste the Vibes"
   },
+
   id: {
     bannerSubtitle: "Nikmati Ombak, Rasakan Suasana",
     bannerBtn: "Lihat Menu Kami",
@@ -47,38 +30,21 @@ const translations = {
     navGallery: "Galeri",
     navPrices: "Harga",
     navContact: "Kontak",
-    optEn: "Inggris",
-    optId: "Bahasa",
-    optNl: "Belanda",
     menuTitle: "Menu Kami",
-    menuDesc: "🍹 Koktail tropis, bir Bintang dingin, minuman kelapa dan minuman ringan • 🍔 Makanan Indonesia • 🥗 Salad segar",
-    menuDrinkText: "Koktail tropis yang menyegarkan",
-    menuBeerText: "Bir Bintang dingin",
+    menuDesc: "🍹 Koktail tropis, bir Bintang dingin, minuman kelapa dan berbagai minuman ringan • 🍔 Makanan Indonesia • 🥗 Salad segar",
     reserveBtn: "Pesan Meja",
     eventsTitle: "Acara",
     eventsDesc: "🎶 Musik live setiap Jumat<br>🏄 Kompetisi selancar setiap Minggu",
     galleryTitle: "Galeri",
-    galleryBarText: "Bar pantai kami yang nyaman",
-    gallerySurfText: "Bagian selancar di Pantai Kuta",
     pricesTitle: "Harga Pelajaran Selancar",
     pricePrivate: "Privat",
     priceSemi: "Semi-Privat",
     priceGroup: "Grup",
     contactTitle: "Kontak & Lokasi",
     contactDesc: "📍 Dewi Surf & Beach Bar<br>Jl. Pantai Kuta, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361<br>📞 0852-6109-9023",
-    footerText: "© 2026 Dewi Surf & Beach Bar | Nikmati Ombak, Rasakan Suasana",
-    beachPartyTitle: "🌴 Pesta Pantai – 8 Mei 2026",
-    beachPartyTime: "Pembukaan pukul 18:00, pesta mulai pukul 19:00",
-    beachPartyDetails: "🔥 Api unggun • 🎶 Musik live • 🎤 Karaoke",
-    beachPartyPrice: "🎟️ Tiket masuk: 200k per orang (harga promo)",
-    countdownTitle: "Hitung Mundur ke Pesta Pantai",
-    countdownBtn: "Pesan via WhatsApp",
-    countdownDays: "hari",
-    countdownHours: "jam",
-    countdownMinutes: "menit",
-    countdownSeconds: "detik",
-    countdownStarted: "telah dimulai!"
+    footerText: "© 2026 Dewi Surf & Beach Bar | Nikmati Ombak, Rasakan Suasana"
   },
+
   nl: {
     bannerSubtitle: "Ride the Waves, Taste the Vibes",
     bannerBtn: "Bekijk ons menu",
@@ -87,45 +53,28 @@ const translations = {
     navGallery: "Galerij",
     navPrices: "Prijzen",
     navContact: "Contact",
-    optEn: "Engels",
-    optId: "Bahasa",
-    optNl: "Nederlands",
     menuTitle: "Ons Menu",
     menuDesc: "🍹 Tropische cocktails, koude Bintang‑biertjes, kokosdrankjes en diverse frisdranken • 🍔 Indonesisch eten • 🥗 Verse salades",
-    menuDrinkText: "Verfrissende tropische cocktails",
-    menuBeerText: "Koude Bintang biertjes",
     reserveBtn: "Reserveer een tafel",
     eventsTitle: "Evenementen",
     eventsDesc: "🎶 Live‑muziek elke vrijdag<br>🏄 Surfwedstrijden elke zondag",
     galleryTitle: "Galerij",
-    galleryBarText: "Onze gezellige beach bar",
-    gallerySurfText: "Surfsectie bij Kuta Beach",
     pricesTitle: "Surf Prijzen",
     pricePrivate: "Privéles",
     priceSemi: "Semi‑privéles",
     priceGroup: "Groepsles",
     contactTitle: "Contact & Locatie",
     contactDesc: "📍 Dewi Surf & Beach Bar<br>Jl. Pantai Kuta, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361<br>📞 0852‑6109‑9023",
-    footerText: "© 2026 Dewi Surf & Beach Bar | Ride the Waves, Taste the Vibes",
-    beachPartyTitle: "🌴 Beach Party – 8 mei 2026",
-    beachPartyTime: "Opening om 18:00, start feest om 19:00",
-    beachPartyDetails: "🔥 Kampvuur • 🎶 Live muziek • 🎤 Karaoke",
-    beachPartyPrice: "🎟️ Entree: 200k per persoon (promotieprijs)",
-    countdownTitle: "Countdown tot Beach Party",
-    countdownBtn: "Reserveer via WhatsApp",
-    countdownDays: "dagen",
-    countdownHours: "uren",
-    countdownMinutes: "minuten",
-    countdownSeconds: "seconden",
-    countdownStarted: "is begonnen!"
+    footerText: "© 2026 Dewi Surf & Beach Bar | Ride the Waves, Taste the Vibes"
   }
 };
 
 function changeLanguage(lang) {
-  localStorage.setItem("selectedLang", lang);
-  const t = translations[lang];
-  for (const key in t) {
-    const el = document.getElementById(key);
-    if (el) el.innerHTML = t[key];
-  }
+  const elements = document.querySelectorAll("[id]");
+  elements.forEach(el => {
+    const key = el.id;
+    if (translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
 }
