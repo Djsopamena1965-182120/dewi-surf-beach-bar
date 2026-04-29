@@ -6,94 +6,74 @@
   <title>Dewi Surf & Beach Bar</title>
   <link rel="stylesheet" href="style.css">
   <script src="translations.js" defer></script>
-  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Dewi Surf & Beach Bar</h1>
-    <p id="bannerSubtitle"></p>
-    <a id="bannerBtn" href="#menu"></a>
+    <p id="bannerSubtitle">Ride the Waves, Taste the Vibes</p>
+    <a id="bannerBtn" href="#menu">Bekijk ons menu</a>
   </header>
 
   <nav>
     <div class="nav-links">
-      <a id="navMenu" href="#menu"></a>
-      <a id="navEvents" href="#events"></a>
-      <a id="navGallery" href="#gallery"></a>
-      <a id="navPrices" href="#prices"></a>
-      <a id="navContact" href="#contact"></a>
+      <a id="navMenu" href="#menu">Menu</a>
+      <a id="navEvents" href="#events">Events</a>
+      <a id="navGallery" href="#gallery">Galerij</a>
+      <a id="navPrices" href="#prices">Prijzen</a>
+      <a id="navContact" href="#contact">Contact</a>
     </div>
     <div class="nav-lang">
       <select id="languageSelect" onchange="changeLanguage(this.value)">
-        <option value="en">English</option>
-        <option value="id">Bahasa</option>
-        <option value="nl" selected>Nederlands</option>
+        <option id="optEn" value="en">English</option>
+        <option id="optId" value="id">Bahasa</option>
+        <option id="optNl" value="nl" selected>Nederlands</option>
       </select>
     </div>
   </nav>
 
-  <section id="menu">
-    <h2 id="menuTitle"></h2>
-    <p id="menuDesc"></p>
-    <img src="images/tropische-drankjes.png" alt="Tropische cocktails">
-    <p id="menuDrinkText"></p>
-    <img src="images/bintang.png" alt="Bintang bier">
-    <p id="menuBeerText"></p>
-    <a href="#contact" id="reserveBtn" class="btn"></a>
+  <section id="menu" class="menu">
+    <h2 id="menuTitle">Ons Menu</h2>
+    <img src="images/tropische-drankjes.png" alt="Tropische cocktails op houten tafel">
+  <img src="images/bintang.png" alt="Tropische cocktails op houten tafel">
+    <p id="menuDesc">🍹 Tropische cocktails, koude Bintang‑biertjes en diverse frisdrankjes • 🍔 Indonesisch eten• 🥗 Salades</p>
+    <a href="#contact" id="reserveBtn" class="btn">Reserveer een tafel</a>
   </section>
 
-  <section id="events">
-    <h2 id="eventsTitle"></h2>
-    <img src="images/strandfeest-met-gitaar-en-vuur.png" alt="Strandfeest">
-    <p id="eventsDesc"></p>
+  <section id="events" class="events">
+  <h2 id="eventsTitle">Evenementen</h2>
+  <img src="images/strandfeest-met-gitaar-en-vuur.png" alt="Strandfeest met gitaar en vuur">
+  <p id="eventsDesc">🎶 Live muziek elke vrijdag<br>🏄 Surfwedstrijden elke zondag</p>
+</section>
+
+
+  <section id="gallery" class="gallery">
+    <h2 id="galleryTitle">Galerij</h2>
+    <!-- juiste volgorde behouden -->
+    <img src="images/dewi-surf-beach-bar.png" alt="Dewi Surf & Beach Bar">
+    <img src="images/surfsectie.png" alt="Surfer op golf bij zonsondergang">
   </section>
 
-  <section id="beachparty">
-    <h2 id="beachPartyTitle"></h2>
-    <p id="beachPartyTime"></p>
-    <p id="beachPartyDetails"></p>
-    <p id="beachPartyPrice"></p>
-    <div id="countdown">
-      <h3 id="countdownTitle"></h3>
-      <div id="countdownTimer"></div>
-      <a href="https://wa.me/6285261099023" id="countdownBtn" target="_blank"></a>
-    </div>
-  </section>
-
-  <section id="gallery">
-    <h2 id="galleryTitle"></h2>
-    <img src="images/dewi-surf-beach-bar.png" alt="Beach Bar">
-    <p id="galleryBarText"></p>
-    <img src="images/surfsectie.png" alt="Surfer">
-    <p id="gallerySurfText"></p>
-  </section>
-
-  <section id="prices">
-    <h2 id="pricesTitle"></h2>
+  <section id="prices" class="prices">
+    <h2 id="pricesTitle">Surf Prijzen</h2>
     <table>
       <tr><th>Lesoptie</th><th>Prijs</th></tr>
-      <tr><td id="pricePrivate"></td><td>200,000 IDR / uur</td></tr>
-      <tr><td id="priceSemi"></td><td>150,000 IDR / uur</td></tr>
-      <tr><td id="priceGroup"></td><td>100,000 IDR / uur</td></tr>
+      <tr><td id="pricePrivate">Privéles</td><td>200,000 IDR / uur</td></tr>
+      <tr><td id="priceSemi">Semi-privéles</td><td>200,000 IDR / uur</td></tr>
+      <tr><td id="priceGroup">Groepsles</td><td>200,000 IDR / uur</td></tr>
     </table>
   </section>
 
   <section id="contact">
-    <h2 id="contactTitle"></h2>
-    <p id="contactDesc"></p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.123456789!2d115.1764895!3d-8.7174508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1sPapa's%20Restaurant%20Kuta!2sDewi%20Surf%20%26%20Beach%20Bar!5e0!3m2!1snl!2sid!4v1710000000000!5m2!1snl!2sid" 
-      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <h2 id="contactTitle">Contact & Locatie</h2>
+    <p id="contactDesc">📍 Dewi Surf & Beach Bar<br>
+       Jl. Pantai Kuta, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361<br>
+       📞 <a href="tel:085261099023">0852-6109-9023</a></p>
+    <iframe src="https://maps.google.com/maps?q=Dewi%20Surf%20and%20Beach%20Bar%2C%20Jl.%20Pantai%20Kuta%2C%20Legian%2C%20Kec.%20Kuta%2C%20Kabupaten%20Badung%2C%20Bali%2080361&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300"></iframe>
   </section>
 
-  <div id="groupQR">
-    <h3 id="groupQRTitle"></h3>
-    <p id="groupQRNote"></p>
-    <img src="images/QR-code.png" alt="QR code">
-    <p><a href="https://chat.whatsapp.com/IE5dzNGeFNCKl0VAFOmWGX" target="_blank">Klik hier om deel te nemen</a></p>
-  </div>
-
   <footer>
-    <p id="footerText"></p>
+    <p id="footerText">&copy; 2026 Dewi Surf & Beach Bar | Ride the Waves, Taste the Vibes</p>
+    <p>Website design by Johan Sopamena</p>
   </footer>
 </body>
 </html>
