@@ -74,9 +74,10 @@ section img {
 }
 
 .prices table {
-  margin: 0 auto;           /* centreert de tabel */
+  margin-left: auto;
+  margin-right: auto;
   border-collapse: collapse;
-  width: 60%;               /* overzichtelijke breedte */
+  width: 60%;
   background: #f9f9f9;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -84,7 +85,7 @@ section img {
 .prices th, .prices td {
   border: 1px solid #ddd;
   padding: 12px;
-  text-align: center;       /* centreert tekst in cellen */
+  text-align: center;  /* centreert tekst in cellen */
 }
 
 .prices th {
@@ -94,16 +95,11 @@ section img {
   letter-spacing: 1px;
 }
 
-/* Hover-effect voor moderne look */
 .prices tr:hover {
   background-color: #f1f1f1;
 }
 
-footer {
-  background: #333;
-  color: #fff;
-  padding: 20px;
-}
+/* ✅ Surf-afbeelding onder de prijzen */
 .prices .surf-image {
   display: block;
   margin: 30px auto;
@@ -112,4 +108,10 @@ footer {
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
 }
