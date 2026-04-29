@@ -3,8 +3,11 @@ function updateCountdown() {
   const now = new Date().getTime();
   const distance = eventDate - now;
 
+  const lang = localStorage.getItem("selectedLang") || "nl";
+  const t = translations[lang];
+
   if (distance < 0) {
-    document.getElementById("countdownTimer").innerHTML = "🎉 Het feest is begonnen!";
+    document.getElementById("countdownTimer").innerHTML = "🎉 " + t.beachPartyTitle + " started!";
     return;
   }
 
@@ -12,9 +15,6 @@ function updateCountdown() {
   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  const lang = localStorage.getItem("selectedLang") || "nl";
-  const t = translations[lang];
 
   document.getElementById("countdownTimer").innerHTML =
     `${days} ${t.countdownDays} ${hours} ${t.countdownHours} ${minutes} ${t.countdownMinutes} ${seconds} ${t.countdownSeconds}`;
