@@ -19,7 +19,14 @@ const translations = {
     priceGroup: "Group",
     contactTitle: "Contact & Location",
     contactDesc: "📍 Dewi Surf & Beach Bar<br>Jl. Pantai Kuta, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361<br>📞 0852-6109-9023",
-    footerText: "© 2026 Dewi Surf & Beach Bar | Ride the Waves, Taste the Vibes"
+    footerText: "© 2026 Dewi Surf & Beach Bar | Ride the Waves, Taste the Vibes",
+    // ✅ Countdown keys
+    beachPartyTitle: "Beach Party",
+    countdownDays: "Days",
+    countdownHours: "Hours",
+    countdownMinutes: "Minutes",
+    countdownSeconds: "Seconds",
+    countdownStarted: "The event has started!"
   },
 
   id: {
@@ -42,7 +49,14 @@ const translations = {
     priceGroup: "Grup",
     contactTitle: "Kontak & Lokasi",
     contactDesc: "📍 Dewi Surf & Beach Bar<br>Jl. Pantai Kuta, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361<br>📞 0852-6109-9023",
-    footerText: "© 2026 Dewi Surf & Beach Bar | Nikmati Ombak, Rasakan Suasana"
+    footerText: "© 2026 Dewi Surf & Beach Bar | Nikmati Ombak, Rasakan Suasana",
+    // ✅ Countdown keys
+    beachPartyTitle: "Pesta Pantai",
+    countdownDays: "Hari",
+    countdownHours: "Jam",
+    countdownMinutes: "Menit",
+    countdownSeconds: "Detik",
+    countdownStarted: "Acara telah dimulai!"
   },
 
   nl: {
@@ -65,7 +79,14 @@ const translations = {
     priceGroup: "Groepsles",
     contactTitle: "Contact & Locatie",
     contactDesc: "📍 Dewi Surf & Beach Bar<br>Jl. Pantai Kuta, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361<br>📞 0852‑6109‑9023",
-    footerText: "© 2026 Dewi Surf & Beach Bar | Ride the Waves, Taste the Vibes"
+    footerText: "© 2026 Dewi Surf & Beach Bar | Ride the Waves, Taste the Vibes",
+    // ✅ Countdown keys
+    beachPartyTitle: "Beach Party",
+    countdownDays: "Dagen",
+    countdownHours: "Uren",
+    countdownMinutes: "Minuten",
+    countdownSeconds: "Seconden",
+    countdownStarted: "Het evenement is gestart!"
   }
 };
 
