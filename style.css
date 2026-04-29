@@ -43,12 +43,12 @@ section {
   text-align: center;   /* alle sectieteksten gecentreerd */
 }
 
-/* Afbeeldingen: compact en gecentreerd */
+/* Afbeeldingen: uniforme maat, 30% groter */
 section img {
-  width: 240px;       /* vaste breedte, niet schermvullend */
+  width: 312px;         /* 240px + 30% = 312px */
   height: auto;
   display: block;
-  margin: 20px auto;  /* centreert horizontaal */
+  margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -202,7 +202,7 @@ footer a:hover {
 
   .prices table { font-size: 0.9rem; }
 
-  section img { width: 180px; } /* kleinere foto’s op mobiel */
+  section img { width: 234px; } /* 180px + 30% = 234px */
   #whatsappBtn, #groupBtn { width: 100%; margin-top: 10px; }
   #groupQR img { width: 140px; }
 }
