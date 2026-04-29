@@ -7,8 +7,7 @@ function updateCountdown() {
   const t = translations[lang];
 
   if (distance < 0) {
-    document.getElementById("countdownTimer").innerHTML =
-      "🎉 " + t.beachPartyTitle + " " + t.countdownStarted;
+    document.getElementById("countdownTimer").innerHTML = "🎉 " + t.beachPartyTitle + " started!";
     return;
   }
 
