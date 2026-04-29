@@ -1,20 +1,32 @@
 function updateCountdown() {
-  const eventDate = new Date("May 8, 2026 18:00:00").getTime();
+  const eventDate = new Date("May 8, 2026 19:00:00").getTime();
   const now = new Date().getTime();
   const distance = eventDate - now;
 
   if (distance < 0) {
-    document.getElementById("countdownTimer").innerHTML = "Het feest is begonnen!";
+    document.getElementById("countdownTimer").innerHTML = "🎉 Het feest is begonnen!";
     return;
   }
 
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  const lang = localStorage.getItem("selectedLang") || "nl";
+  const t = translations[lang];
 
   document.getElementById("countdownTimer").innerHTML =
-    "Nog " + days + " dagen, " + hours + " uur, " + minutes + " minuten!";
+    `${days} ${t.countdownDays} ${hours} ${t.countdownHours} ${minutes} ${t.countdownMinutes} ${seconds} ${t.countdownSeconds}`;
 }
 
-setInterval(updateCountdown, 60000);
-updateCountdown();
+setInterval(updateCountdown, 1000);
+
+function changeLanguage(lang) {
+  localStorage.setItem("selectedLang", lang);
+  const t = translations[lang];
+  for (const key in t) {
+    const el = document.getElementById(key);
+    if (el) el.innerHTML = t[key];
+  }
+}
