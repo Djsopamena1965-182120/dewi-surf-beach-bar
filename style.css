@@ -45,8 +45,8 @@ section {
 
 /* Afbeeldingen: uniforme maat, 50% groter */
 section img {
-  width: 600px;       /* 240px + 50% = 360px */
-  height: 800px;      /* vaste hoogte voor uniformiteit */
+  width: 800px;       /* 240px + 50% = 360px */
+  height: 600px;      /* vaste hoogte voor uniformiteit */
   object-fit: cover;  /* snijdt netjes bij, behoud verhouding */
   display: block;
   margin: 20px auto;
