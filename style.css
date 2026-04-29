@@ -65,17 +65,18 @@ section img {
   border-radius: 8px;
   margin: 20px auto;
   max-width: 400px;
+  text-align: center;
 }
 
 /* ✅ Surf Prijzen sectie */
 .prices {
-  text-align: center;
+  text-align: center; /* centreert titel */
 }
 
 .prices table {
-  margin: 0 auto;
+  margin: 0 auto;           /* centreert de tabel */
   border-collapse: collapse;
-  width: 60%;
+  width: 60%;               /* overzichtelijke breedte */
   background: #f9f9f9;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -83,15 +84,17 @@ section img {
 .prices th, .prices td {
   border: 1px solid #ddd;
   padding: 12px;
-  text-align: center;
+  text-align: center;       /* centreert tekst in cellen */
 }
 
 .prices th {
   background: #333;
   color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Optioneel: hover-effect voor modernere look */
+/* Hover-effect voor moderne look */
 .prices tr:hover {
   background-color: #f1f1f1;
 }
