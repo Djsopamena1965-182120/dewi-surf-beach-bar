@@ -3,7 +3,7 @@ header {
   background: url("images/beach-fotos.png") no-repeat center center/cover;
   color: #fff;
   text-align: center;
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,8 +45,8 @@ section {
 
 /* Afbeeldingen: uniforme maat, 50% groter */
 section img {
-  width: 800px;       /* 240px + 50% = 360px */
-  height: 600px;      /* vaste hoogte voor uniformiteit */
+  width: 700px;       /* 240px + 50% = 360px */
+  height: 500px;      /* vaste hoogte voor uniformiteit */
   object-fit: cover;  /* snijdt netjes bij, behoud verhouding */
   display: block;
   margin: 20px auto;
