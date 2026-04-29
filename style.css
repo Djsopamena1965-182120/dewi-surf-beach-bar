@@ -2,7 +2,7 @@
 header {
   background: url("images/beach-fotos.png") no-repeat center center/cover;
   color: #fff;
-  text-align: center;   /* teksten gecentreerd */
+  text-align: center;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@ section {
 
 /* Afbeeldingen: compact en gecentreerd */
 section img {
-  width: 240px;       /* vaste breedte */
+  width: 240px;       /* vaste breedte, niet schermvullend */
   height: auto;
   display: block;
   margin: 20px auto;  /* centreert horizontaal */
@@ -60,7 +60,7 @@ section img {
   width: 100%;
   background: #f9f9f9;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;   /* tabelinhoud gecentreerd */
+  text-align: center;
 }
 
 .prices th, .prices td {
