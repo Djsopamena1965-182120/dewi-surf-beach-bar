@@ -1,5 +1,5 @@
 :root {
-  --banner-height: 100vh;
+  --banner-height: 70vh;
 }
 
 body {
@@ -49,12 +49,17 @@ section {
 }
 
 section img {
-  width: 700px;
-  height: 500px;
+  width: 360px;
+  height: 240px;
   object-fit: cover;
-  margin: 20px auto;
+  margin: 10px auto;
   border-radius: 8px;
   display: block;
+}
+
+section p {
+  margin: 5px auto;
+  max-width: 600px;
 }
 
 #countdown {
