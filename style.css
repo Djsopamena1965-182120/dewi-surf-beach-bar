@@ -1,117 +1,144 @@
-:root {
-  --banner-height: 100vh;
-}
-
-body {
+/* Algemene reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: Arial, sans-serif;
-  text-align: center;
+  line-height: 1.6;
+  color: #333;
 }
 
+/* Header / Banner */
 header {
-  background: url("images/beach-fotos.png") no-repeat center center/cover;
+  background: url("images/banner.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: #fff;
-  min-height: var(--banner-height);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+}
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.2rem;
 }
 
+/* Navigatie */
 nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #333;
-  padding: 10px 20px;
-}
-
-.nav-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background: #222;
 }
-
-.nav-links a {
+nav a {
   color: #fff;
-  margin: 10px;
+  padding: 12px 20px;
   text-decoration: none;
-}
-
-.nav-lang {
-  margin-top: 10px;
-}
-
-section {
-  padding: 40px 20px;
-}
-
-section img {
-  width: 700px;
-  height: 500px;
-  object-fit: cover;
-  margin: 20px auto;
-  border-radius: 8px;
-  display: block;
-}
-
-/* ✅ Countdown styling */
-#countdownTimer {
-  background: #333;
-  color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 20px auto;
-  max-width: 400px;
+  flex: 1 1 auto;
   text-align: center;
 }
-
-/* ✅ Surf Prijzen sectie */
-.prices {
-  text-align: center; /* centreert titel */
+nav a:hover {
+  background: #444;
 }
 
-.prices table {
+/* Secties */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Menu */
+.menu img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Evenementen */
+.events img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+.event-details {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  border-collapse: collapse;
-  width: 60%;
-  background: #f9f9f9;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.prices th, .prices td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: center;  /* centreert tekst in cellen */
+/* Galerij */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
 }
-
-.prices th {
-  background: #333;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.prices tr:hover {
-  background-color: #f1f1f1;
-}
-
-/* ✅ Surf-afbeelding onder de prijzen */
-.prices .surf-image {
+.gallery img {
+  width: 100%;
+  height: auto;
   display: block;
-  margin: 30px auto;
-  width: 700px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-footer {
-  background: #333;
+/* Prijzen */
+.prices table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.prices th, .prices td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.prices th {
+  background: #222;
   color: #fff;
-  padding: 20px;
+}
+
+/* Contact */
+.contact p {
+  margin: 10px 0;
+}
+.contact a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Media queries voor mobiel */
+@media (max-width: 768px) {
+  header h1 { font-size: 2rem; }
+  header p { font-size: 1rem; }
+  nav { flex-direction: column; }
+  .event-details { text-align: center; }
+}
+
+@media (max-width: 480px) {
+  header h1 { font-size: 1.5rem; }
+  header p { font-size: 0.9rem; }
+  section h2 { font-size: 1.5rem; }
+  .prices th, .prices td { font-size: 0.9rem; padding: 6px; }
 }
