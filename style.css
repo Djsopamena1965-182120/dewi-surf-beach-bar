@@ -57,7 +57,8 @@ section img {
   display: block;
 }
 
-#countdown {
+/* ✅ Countdown styling aangepast naar countdownTimer */
+#countdownTimer {
   background: #333;
   color: #fff;
   padding: 20px;
