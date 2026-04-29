@@ -41,12 +41,12 @@ section {
   padding: 40px 20px;
 }
 
-/* Afbeeldingen: responsive */
+/* Afbeeldingen: compact en gecentreerd */
 section img {
-  max-width: 100%;   /* schaalt mee met scherm */
-  height: auto;      /* behoud verhouding */
+  width: 280px;       /* uniforme breedte */
+  height: auto;       /* behoud verhouding */
   display: block;
-  margin: 20px auto;
+  margin: 20px auto;  /* centreert horizontaal */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -159,7 +159,7 @@ section img {
 }
 
 #groupQR img {
-  max-width: 200px;
+  width: 200px;       /* vaste maat QR-code */
   margin: 15px auto;
   display: block;
   animation: glowQR 3s infinite;
@@ -200,7 +200,8 @@ footer a:hover {
   .prices table { font-size: 0.9rem; }
 
   #whatsappBtn, #groupBtn { width: 100%; margin-top: 10px; }
-  #groupQR img { max-width: 150px; }
+  #groupQR img { width: 150px; }
 }
+
 
 
