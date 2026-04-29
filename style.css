@@ -72,3 +72,26 @@ footer {
   color: #fff;
   padding: 20px;
 }
+/* Surf Prijzen sectie */
+.prices {
+  text-align: center;       /* centreert de titel en inhoud */
+}
+
+.prices table {
+  margin: 0 auto;           /* centreert de tabel zelf */
+  border-collapse: collapse;
+  width: 60%;               /* niet te breed */
+  background: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.prices th, .prices td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;       /* centreert tekst in cellen */
+}
+
+.prices th {
+  background: #333;
+  color: #fff;
+}
