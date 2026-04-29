@@ -6,6 +6,7 @@
   <title>Dewi Surf & Beach Bar</title>
   <link rel="stylesheet" href="style.css">
   <script src="translations.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -17,7 +18,7 @@
   <nav>
     <div class="nav-links">
       <a id="navMenu" href="#menu">Menu</a>
-      <a id="navEvents" href="#events">Events</a>
+      <a id="navEvents" href="#events">Evenementen</a>
       <a id="navGallery" href="#gallery">Galerij</a>
       <a id="navPrices" href="#prices">Prijzen</a>
       <a id="navContact" href="#contact">Contact</a>
@@ -34,21 +35,19 @@
   <section id="menu" class="menu">
     <h2 id="menuTitle">Ons Menu</h2>
     <img src="images/tropische-drankjes.png" alt="Tropische cocktails op houten tafel">
-  <img src="images/bintang.png" alt="Tropische cocktails op houten tafel">
-    <p id="menuDesc">🍹 Tropische cocktails, koude Bintang‑biertjes en diverse frisdrankjes • 🍔 Indonesisch eten• 🥗 Salades</p>
+    <img src="images/bintang.png" alt="Bintang bier">
+    <p id="menuDesc">🍹 Tropische cocktails, koude Bintang‑biertjes en diverse frisdrankjes • 🍔 Indonesisch eten • 🥗 Verse salades</p>
     <a href="#contact" id="reserveBtn" class="btn">Reserveer een tafel</a>
   </section>
 
   <section id="events" class="events">
-  <h2 id="eventsTitle">Evenementen</h2>
-  <img src="images/strandfeest-met-gitaar-en-vuur.png" alt="Strandfeest met gitaar en vuur">
-  <p id="eventsDesc">🎶 Live muziek elke vrijdag<br>🏄 Surfwedstrijden elke zondag</p>
-</section>
-
+    <h2 id="eventsTitle">Evenementen</h2>
+    <img src="images/strandfeest-met-gitaar-en-vuur.png" alt="Strandfeest met gitaar en vuur">
+    <p id="eventsDesc">🎶 Live muziek elke vrijdag<br>🏄 Surfwedstrijden elke zondag</p>
+  </section>
 
   <section id="gallery" class="gallery">
     <h2 id="galleryTitle">Galerij</h2>
-    <!-- juiste volgorde behouden -->
     <img src="images/dewi-surf-beach-bar.png" alt="Dewi Surf & Beach Bar">
     <img src="images/surfsectie.png" alt="Surfer op golf bij zonsondergang">
   </section>
@@ -58,8 +57,8 @@
     <table>
       <tr><th>Lesoptie</th><th>Prijs</th></tr>
       <tr><td id="pricePrivate">Privéles</td><td>200,000 IDR / uur</td></tr>
-      <tr><td id="priceSemi">Semi-privéles</td><td>200,000 IDR / uur</td></tr>
-      <tr><td id="priceGroup">Groepsles</td><td>200,000 IDR / uur</td></tr>
+      <tr><td id="priceSemi">Semi‑privéles</td><td>150,000 IDR / uur</td></tr>
+      <tr><td id="priceGroup">Groepsles</td><td>100,000 IDR / uur</td></tr>
     </table>
   </section>
 
@@ -67,13 +66,23 @@
     <h2 id="contactTitle">Contact & Locatie</h2>
     <p id="contactDesc">📍 Dewi Surf & Beach Bar<br>
        Jl. Pantai Kuta, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361<br>
-       📞 <a href="tel:085261099023">0852-6109-9023</a></p>
+       📞 <a href="tel:085261099023">0852‑6109‑9023</a></p>
     <iframe src="https://maps.google.com/maps?q=Dewi%20Surf%20and%20Beach%20Bar%2C%20Jl.%20Pantai%20Kuta%2C%20Legian%2C%20Kec.%20Kuta%2C%20Kabupaten%20Badung%2C%20Bali%2080361&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300"></iframe>
   </section>
+
+  <div id="groupQR">
+    <h3 id="groupQRTitle">👥 Join Dewi Beach Bar Party groepsapp</h3>
+    <p id="groupQRNote">Scan de QR‑code of klik op de link:</p>
+    <img src="images/QR-code.png" alt="QR code Dewi Beach Bar Party groepsapp">
+    <p><a href="https://chat.whatsapp.com/IE5dzNGeFNCKl0VAFOmWGX" target="_blank">Klik hier om deel te nemen</a></p>
+  </div>
 
   <footer>
     <p id="footerText">&copy; 2026 Dewi Surf & Beach Bar | Ride the Waves, Taste the Vibes</p>
     <p>Website design by Johan Sopamena</p>
+    <p>📱 <a href="https://wa.me/6285261099023?text=Hallo%20DJ,%20ik%20wil%20reserveren%20voor%20de%20Dewi%20Beach%20Bar%20Party%20op%208%20mei.%20Aantal%20personen:%20" target="_blank">Reserveer via WhatsApp</a></p>
+    <p>👥 <a href="https://chat.whatsapp.com/IE5dzNGeFNCKl0VAFOmWGX" target="_blank">Join Dewi Beach Bar Party groepsapp</a></p>
   </footer>
 </body>
 </html>
+
