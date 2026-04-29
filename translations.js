@@ -1,19 +1,56 @@
-function updateCountdown() {
-  const eventDate = new Date("May 8, 2026 19:00:00").getTime();
-  const now = new Date().getTime();
-  const distance = eventDate - now;
-
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Haal labels uit translations.js
-  const lang = localStorage.getItem("selectedLang") || "nl";
-  const t = translations[lang];
-
-  document.getElementById("countdownTimer").innerHTML =
-    `${days} ${t.countdownDays} ${hours} ${t.countdownHours} ${minutes} ${t.countdownMinutes} ${seconds} ${t.countdownSeconds}`;
-}
-
-setInterval(updateCountdown
+const translations = {
+  en: {
+    bannerSubtitle: "Ride the Waves, Taste the Vibes",
+    bannerBtn: "View our menu",
+    navMenu: "Menu",
+    navEvents: "Events",
+    navGallery: "Gallery",
+    navPrices: "Prices",
+    navContact: "Contact",
+    menuTitle: "Our Menu",
+    menuDesc: "🍹 Tropical cocktails, cold Bintang beers and soft drinks • 🍔 Indonesian food • 🥗 Fresh salads",
+    reserveBtn: "Reserve a table",
+    eventsTitle: "Events",
+    eventsDesc: "🎶 Live music every Friday<br>🏄 Surf competitions every Sunday",
+    galleryTitle: "Gallery",
+    pricesTitle: "Surf Prices",
+    pricePrivate: "Private lesson",
+    priceSemi: "Semi-private lesson",
+    priceGroup: "Group lesson",
+    contactTitle: "Contact & Location",
+    contactDesc: "📍 Dewi Surf & Beach Bar<br>Opposite Papa’s Restaurant, Kuta Beach, Bali<br>📞 0852-6109-9023",
+    groupQRTitle: "👥 Join Dewi Beach Bar Party group",
+    groupQRNote: "Scan the QR code or click the link:",
+    footerText: "© 2026 Dewi Surf & Beach Bar | Ride the Waves, Taste the Vibes",
+    beachPartyTitle: "🌴 Beach Party – May 8, 2026",
+    beachPartyTime: "Opening at 18:00, party starts at 19:00",
+    beachPartyDetails: "🔥 Bonfire • 🎶 Live music • 🎤 Karaoke",
+    beachPartyPrice: "🎟️ Entrance: 200k per person (promo price)",
+    countdownTitle: "Countdown to Beach Party",
+    countdownBtn: "Reserve via WhatsApp",
+    countdownDays: "days",
+    countdownHours: "hours",
+    countdownMinutes: "minutes",
+    countdownSeconds: "seconds"
+  },
+  id: {
+    bannerSubtitle: "Nikmati Ombak, Rasakan Suasana",
+    bannerBtn: "Lihat menu kami",
+    navMenu: "Menu",
+    navEvents: "Acara",
+    navGallery: "Galeri",
+    navPrices: "Harga",
+    navContact: "Kontak",
+    menuTitle: "Menu Kami",
+    menuDesc: "🍹 Koktail tropis, bir Bintang dingin dan minuman ringan • 🍔 Makanan Indonesia • 🥗 Salad segar",
+    reserveBtn: "Pesan meja",
+    eventsTitle: "Acara",
+    eventsDesc: "🎶 Musik live setiap Jumat<br>🏄 Kompetisi selancar setiap Minggu",
+    galleryTitle: "Galeri",
+    pricesTitle: "Harga Surfing",
+    pricePrivate: "Les privat",
+    priceSemi: "Les semi-privat",
+    priceGroup: "Les kelompok",
+    contactTitle: "Kontak & Lokasi",
+    contactDesc: "📍 Dewi Surf & Beach Bar<br>Di seberang Papa’s Restaurant, Pantai Kuta, Bali<br>📞 0852-6109-9023",
+    groupQRTitle: "👥
