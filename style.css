@@ -1,79 +1,117 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dewi Surf & Beach Bar</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="translations.js" defer></script>
-</head>
-<body>
-  <header>
-    <h1>Dewi Surf & Beach Bar</h1>
-    <p id="bannerSubtitle">Ride the Waves, Taste the Vibes</p>
-    <a id="bannerBtn" href="#menu">Bekijk ons menu</a>
-  </header>
+:root {
+  --banner-height: 100vh;
+}
 
-  <nav>
-    <div class="nav-links">
-      <a id="navMenu" href="#menu">Menu</a>
-      <a id="navEvents" href="#events">Events</a>
-      <a id="navGallery" href="#gallery">Galerij</a>
-      <a id="navPrices" href="#prices">Prijzen</a>
-      <a id="navContact" href="#contact">Contact</a>
-    </div>
-    <div class="nav-lang">
-      <select id="languageSelect" onchange="changeLanguage(this.value)">
-        <option id="optEn" value="en">English</option>
-        <option id="optId" value="id">Bahasa</option>
-        <option id="optNl" value="nl" selected>Nederlands</option>
-      </select>
-    </div>
-  </nav>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
 
-  <section id="menu" class="menu">
-    <h2 id="menuTitle">Ons Menu</h2>
-    <img src="images/tropische-drankjes.png" alt="Tropische cocktails op houten tafel">
-  <img src="images/bintang.png" alt="Tropische cocktails op houten tafel">
-    <p id="menuDesc">🍹 Tropische cocktails, koude Bintang‑biertjes en diverse frisdrankjes • 🍔 Indonesisch eten• 🥗 Salades</p>
-    <a href="#contact" id="reserveBtn" class="btn">Reserveer een tafel</a>
-  </section>
+header {
+  background: url("images/beach-fotos.png") no-repeat center center/cover;
+  color: #fff;
+  min-height: var(--banner-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
-  <section id="events" class="events">
-  <h2 id="eventsTitle">Evenementen</h2>
-  <img src="images/strandfeest-met-gitaar-en-vuur.png" alt="Strandfeest met gitaar en vuur">
-  <p id="eventsDesc">🎶 Live muziek elke vrijdag<br>🏄 Surfwedstrijden elke zondag</p>
-</section>
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  padding: 10px 20px;
+}
 
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  <section id="gallery" class="gallery">
-    <h2 id="galleryTitle">Galerij</h2>
-    <!-- juiste volgorde behouden -->
-    <img src="images/dewi-surf-beach-bar.png" alt="Dewi Surf & Beach Bar">
-    <img src="images/surfsectie.png" alt="Surfer op golf bij zonsondergang">
-  </section>
+.nav-links a {
+  color: #fff;
+  margin: 10px;
+  text-decoration: none;
+}
 
-  <section id="prices" class="prices">
-    <h2 id="pricesTitle">Surf Prijzen</h2>
-    <table>
-      <tr><th>Lesoptie</th><th>Prijs</th></tr>
-      <tr><td id="pricePrivate">Privéles</td><td>200,000 IDR / uur</td></tr>
-      <tr><td id="priceSemi">Semi-privéles</td><td>200,000 IDR / uur</td></tr>
-      <tr><td id="priceGroup">Groepsles</td><td>200,000 IDR / uur</td></tr>
-    </table>
-  </section>
+.nav-lang {
+  margin-top: 10px;
+}
 
-  <section id="contact">
-    <h2 id="contactTitle">Contact & Locatie</h2>
-    <p id="contactDesc">📍 Dewi Surf & Beach Bar<br>
-       Jl. Pantai Kuta, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361<br>
-       📞 <a href="tel:085261099023">0852-6109-9023</a></p>
-    <iframe src="https://maps.google.com/maps?q=Dewi%20Surf%20and%20Beach%20Bar%2C%20Jl.%20Pantai%20Kuta%2C%20Legian%2C%20Kec.%20Kuta%2C%20Kabupaten%20Badung%2C%20Bali%2080361&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300"></iframe>
-  </section>
+section {
+  padding: 40px 20px;
+}
 
-  <footer>
-    <p id="footerText">&copy; 2026 Dewi Surf & Beach Bar | Ride the Waves, Taste the Vibes</p>
-    <p>Website design by Johan Sopamena</p>
-  </footer>
-</body>
-</html>
+section img {
+  width: 700px;
+  height: 500px;
+  object-fit: cover;
+  margin: 20px auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* ✅ Countdown styling */
+#countdownTimer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* ✅ Surf Prijzen sectie */
+.prices {
+  text-align: center; /* centreert titel */
+}
+
+.prices table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 60%;
+  background: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.prices th, .prices td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;  /* centreert tekst in cellen */
+}
+
+.prices th {
+  background: #333;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.prices tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ✅ Surf-afbeelding onder de prijzen */
+.prices .surf-image {
+  display: block;
+  margin: 30px auto;
+  width: 700px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
