@@ -99,17 +99,22 @@ section img,
 
 /* ===== PRICES TABLE ===== */
 .prices table {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   border-collapse: collapse;
+  table-layout: fixed;   /* vaste kolombreedtes */
 }
 .prices th, .prices td {
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
+  width: 50%;            /* twee kolommen van gelijke breedte */
 }
 .prices th {
   background: #222;
   color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* ===== CONTACT ===== */
@@ -140,6 +145,7 @@ footer {
   .event-details { text-align: center; }
   section h2 { font-size: 1.6rem; }
   section img { max-width: 100%; }
+  .prices table { width: 95%; }
 }
 
 @media (max-width: 480px) {
