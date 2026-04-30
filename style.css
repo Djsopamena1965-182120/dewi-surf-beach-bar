@@ -102,7 +102,6 @@ section img,
   width: 80%;
   margin: 0 auto;
   border-collapse: collapse;
-  table-layout: fixed;   /* vaste kolommen */
 }
 .prices th, .prices td {
   border: 1px solid #ccc;
@@ -115,14 +114,10 @@ section img,
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* Zorg dat er precies 2 kolommen zijn */
-.prices table tr th:nth-child(1),
-.prices table tr td:nth-child(1) {
-  width: 50%;
-}
-.prices table tr th:nth-child(2),
-.prices table tr td:nth-child(2) {
-  width: 50%;
+/* laat de inhoud gewoon zien, geen fixed layout */
+.prices td {
+  color: #333;
+  font-weight: 500;
 }
 
 /* ===== CONTACT ===== */
