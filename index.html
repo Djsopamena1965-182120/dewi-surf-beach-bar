@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,37 +10,38 @@
 </head>
 <body>
   <header>
-    <!-- ✅ Banner afbeelding toegevoegd -->
+    <!-- ✅ Banner afbeelding -->
     <img src="images/dewi-surf-beach-bar.png" alt="Dewi Surf & Beach Bar Banner" class="banner-img">
 
-  <nav>
-    <div class="nav-links">
-      <a id="navMenu" href="#menu">Menu</a>
-      <a id="navEvents" href="#events">Events</a>
-      <a id="navGallery" href="#gallery">Galerij</a>
-      <a id="navPrices" href="#prices">Prijzen</a>
-      <a id="navContact" href="#contact">Contact</a>
-    </div>
-    <div class="nav-lang">
-      <select id="languageSelect" onchange="changeLanguage(this.value)">
-        <option id="optEn" value="en">English</option>
-        <option id="optId" value="id">Bahasa</option>
-        <option id="optNl" value="nl" selected>Nederlands</option>
-      </select>
-    </div>
-  </nav>
+    <nav>
+      <div class="nav-links">
+        <a id="navMenu" href="#menu">Menu</a>
+        <a id="navEvents" href="#events">Events</a>
+        <a id="navGallery" href="#gallery">Gallery</a>
+        <a id="navPrices" href="#prices">Prices</a>
+        <a id="navContact" href="#contact">Contact</a>
+      </div>
+      <div class="nav-lang">
+        <select id="languageSelect" onchange="changeLanguage(this.value)">
+          <option id="optEn" value="en" selected>English</option>
+          <option id="optId" value="id">Bahasa</option>
+          <option id="optNl" value="nl">Nederlands</option>
+        </select>
+      </div>
+    </nav>
+  </header>
 
   <section id="menu" class="menu">
-    <h2 id="menuTitle">Ons Menu</h2>
-    <img src="images/tropische-drankjes.png" alt="Tropische cocktails op houten tafel">
-    <img src="images/bintang.png" alt="Bintang bier">
-    <p id="menuDesc">🍹 Tropische cocktails, koude Bintang‑biertjes en diverse frisdrankjes • 🍔 Indonesisch eten • 🥗 Salades</p>
-    <a href="#contact" id="reserveBtn" class="btn">Reserveer een tafel</a>
+    <h2 id="menuTitle">Our Menu</h2>
+    <img src="images/tropische-drankjes.png" alt="Tropical cocktails on wooden table">
+    <img src="images/bintang.png" alt="Bintang beer">
+    <p id="menuDesc">🍹 Tropical cocktails, cold Bintang beers and soft drinks • 🍔 Indonesian food • 🥗 Salads</p>
+    <a href="#contact" id="reserveBtn" class="btn">Reserve a table</a>
   </section>
 
   <section id="events" class="events">
-    <h2 id="eventsTitle">Evenementen</h2>
-    <img src="images/flyer1.png" alt="Strandfeest met gitaar en vuur">
+    <h2 id="eventsTitle">Events</h2>
+    <img src="images/flyer1.png" alt="Beach party with guitar and fire">
     <p id="eventsDesc">🎶 Live music every Friday<br>🏄 Surf competitions every Sunday</p>
 
     <div class="event-details">
@@ -75,27 +76,25 @@
   </section>
 
   <section id="gallery" class="gallery">
-    <h2 id="galleryTitle">Galerij</h2>
+    <h2 id="galleryTitle">Gallery</h2>
     <img src="images/dewi-surf-beach-bar.png" alt="Dewi Surf & Beach Bar">
   </section>
 
   <section id="prices" class="prices">
-    <h2 id="pricesTitle">Surf Prijzen</h2>
+    <h2 id="pricesTitle">Surf Prices</h2>
     <table>
-      <tr><th>Lesoptie</th><th>Prijs</th></tr>
-      <tr><td id="pricePrivate">Privéles</td><td>200,000 IDR / uur</td></tr>
-      <tr><td id="priceSemi">Semi-privéles</td><td>200,000 IDR / uur</td></tr>
-      <tr><td id="priceGroup">Groepsles</td><td>200,000 IDR / uur</td></tr>
+      <tr><th>Lesson Option</th><th>Price</th></tr>
+      <tr><td id="pricePrivate">Private Lesson</td><td>200,000 IDR / hour</td></tr>
+      <tr><td id="priceSemi">Semi-private Lesson</td><td>200,000 IDR / hour</td></tr>
+      <tr><td id="priceGroup">Group Lesson</td><td>200,000 IDR / hour</td></tr>
     </table>
-    <img src="images/surf-les.png" alt="Surfer tijdens les op Kuta Beach" class="surf-image">
+    <img src="images/surf-les.png" alt="Surfer during lesson at Kuta Beach" class="surf-image">
   </section>
 
   <section id="contact">
-    <h2 id="contactTitle">Contact & Locatie</h2>
+    <h2 id="contactTitle">Contact & Location</h2>
     <p id="contactDesc">📍 Dewi Surf & Beach Bar<br>
-      (Located right infront of: Papa's Beach Cafe)
-      (Terletak tepat di seberang: Papa's Beach Cafe)
-      (Ligt recht tegenover: Papa's Beach Cafe)
+      Located right opposite: Papa's Beach Cafe<br>
       Jl. Pantai Kuta, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361<br>
       📞 <a href="tel:085261099023">0852-6109-9023</a>
     </p>
