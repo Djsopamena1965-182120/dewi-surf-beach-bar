@@ -13,23 +13,50 @@ body {
 
 /* ===== HEADER / BANNER ===== */
 header {
-  background: url("images/beach-fotos.png") no-repeat center center;
-  background-size: cover;
+  position: relative;
   width: 100%;
-  min-height: 60vh;   /* vaste hoogte zodat hij altijd zichtbaar blijft */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
   text-align: center;
   color: #fff;
 }
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+
+/* Banner afbeelding */
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
+
+/* Overlay tekst */
+header h1,
+header p,
+header a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* Titel bovenaan */
+header h1 {
+  top: 20%;
+  font-size: 3rem;
+}
+
+/* Subtitle */
 header p {
+  top: 35%;
   font-size: 1.2rem;
+}
+
+/* Knop */
+header a {
+  top: 55%;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 /* ===== NAVIGATION ===== */
@@ -65,19 +92,15 @@ section img,
 .menu img,
 .events img,
 .gallery img,
-.prices img {
+.prices img,
+.surf-image {
   width: 100%;
   height: auto;
-  max-width: 700px;   /* desktop limiet */
+  max-width: 700px;
   display: block;
   margin: 10px auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-/* ===== SURF-LES FOTO SPECIFIEK ===== */
-.prices img[src*="surf-les.png"] {
-  max-width: 100%;    /* geen limiet op mobiel */
 }
 
 /* ===== GALLERY GRID ===== */
@@ -124,12 +147,9 @@ footer {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
-  header {
-    min-height: 50vh;
-    padding: 20px;
-  }
-  header h1 { font-size: 2rem; }
-  header p { font-size: 1rem; }
+  header h1 { font-size: 2rem; top: 15%; }
+  header p { font-size: 1rem; top: 30%; }
+  header a { top: 50%; }
   nav { flex-direction: column; }
   .event-details { text-align: center; }
   section h2 { font-size: 1.6rem; }
@@ -137,13 +157,9 @@ footer {
 }
 
 @media (max-width: 480px) {
-  header h1 { font-size: 1.5rem; }
-  header p { font-size: 0.9rem; }
+  header h1 { font-size: 1.5rem; top: 10%; }
+  header p { font-size: 0.9rem; top: 25%; }
+  header a { top: 45%; }
   section h2 { font-size: 1.4rem; }
   .prices th, .prices td { font-size: 0.9rem; padding: 6px; }
-}
-.banner-img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
