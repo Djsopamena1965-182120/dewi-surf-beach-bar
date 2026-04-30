@@ -13,50 +13,37 @@ body {
 
 /* ===== HEADER / BANNER ===== */
 header {
-  position: relative;
   width: 100%;
-  overflow: hidden;
   text-align: center;
   color: #fff;
+  position: relative;
 }
-
-/* Banner afbeelding */
 .banner-img {
   width: 100%;
   height: auto;
   display: block;
 }
-
-/* Overlay tekst */
-header h1,
-header p,
-header a {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
-}
-
-/* Titel */
 header h1 {
-  top: 20%;
-  font-size: 3rem;
+  margin-top: 15px;
+  font-size: 2.5rem;
+  color: #222;
 }
-
-/* Subtitle */
 header p {
-  top: 35%;
+  margin: 10px 0;
   font-size: 1.2rem;
+  color: #444;
 }
-
-/* Knop */
 header a {
-  top: 55%;
-  background: rgba(0,0,0,0.5);
+  display: inline-block;
+  margin-top: 15px;
+  background: #0066cc;
+  color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
+}
+header a:hover {
+  background: #004c99;
 }
 
 /* ===== NAVIGATION ===== */
@@ -147,9 +134,8 @@ footer {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
-  header h1 { font-size: 2rem; top: 15%; }
-  header p { font-size: 1rem; top: 30%; }
-  header a { top: 50%; }
+  header h1 { font-size: 2rem; }
+  header p { font-size: 1rem; }
   nav { flex-direction: column; }
   .event-details { text-align: center; }
   section h2 { font-size: 1.6rem; }
@@ -157,9 +143,8 @@ footer {
 }
 
 @media (max-width: 480px) {
-  header h1 { font-size: 1.5rem; top: 10%; }
-  header p { font-size: 0.9rem; top: 25%; }
-  header a { top: 45%; }
+  header h1 { font-size: 1.5rem; }
+  header p { font-size: 0.9rem; }
   section h2 { font-size: 1.4rem; }
   .prices th, .prices td { font-size: 0.9rem; padding: 6px; }
 }
