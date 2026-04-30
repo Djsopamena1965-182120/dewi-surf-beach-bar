@@ -15,7 +15,8 @@ body {
 header {
   background: url("images/banner.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  width: 100%;
+  height: auto;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -60,48 +61,29 @@ section h2 {
   font-size: 2rem;
 }
 
-/* ===== MENU ===== */
-.menu img {
+/* ===== IMAGES (UNIVERSAL FIX) ===== */
+section img,
+.menu img,
+.events img,
+.gallery img,
+.prices img {
   width: 100%;
-  max-width: 700px;
+  max-width: 700px;   /* limiet op desktop */
   height: auto;
-  margin: 10px auto;
   display: block;
+  margin: 10px auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* ===== EVENTS ===== */
-.events img {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  margin: 10px auto;
-  display: block;
-  border-radius: 10px;
-}
-.event-details {
-  margin-top: 20px;
-  text-align: left;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ===== GALLERY ===== */
+/* ===== GALLERY GRID ===== */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
 }
-.gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
 
-/* ===== PRICES ===== */
+/* ===== PRICES TABLE ===== */
 .prices table {
   width: 100%;
   border-collapse: collapse;
@@ -139,7 +121,6 @@ footer {
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   header {
-    height: auto;
     min-height: 50vh;
     padding: 20px;
   }
@@ -148,6 +129,7 @@ footer {
   nav { flex-direction: column; }
   .event-details { text-align: center; }
   section h2 { font-size: 1.6rem; }
+  section img { max-width: 100%; }
 }
 
 @media (max-width: 480px) {
