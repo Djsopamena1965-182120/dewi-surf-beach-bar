@@ -15,6 +15,15 @@ function changeLanguage(lang) {
   document.getElementById("pricesTitle").textContent = t.pricesTitle;
   document.getElementById("contactTitle").textContent = t.contactTitle;
 
+  // Menu sectie
+  document.getElementById("menuDesc").textContent = t.menuDesc;
+  document.getElementById("reserveBtn").textContent = t.reserveBtn;
+
+  // Prijzen tabel
+  document.getElementById("pricePrivate").textContent = t.pricePrivate;
+  document.getElementById("priceSemi").textContent = t.priceSemi;
+  document.getElementById("priceGroup").textContent = t.priceGroup;
+
   // Contact sectie
   document.getElementById("contactDesc").childNodes[0].textContent = t.contactDesc + "\n";
   document.getElementById("contactOpposite").textContent = t.contactOpposite;
